@@ -1,0 +1,17 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+@mixin firefox-only {
+  @at-root {
+    @document () {
+      & {
+        @content;
+      }
+    }
+  }
+}
+
+$dark-text: rgb(65, 64, 66);
+$dark-text-100: rgb(0, 0, 0);
+$light-text: rgb(255, 255, 255);
+$accent-color: rgb(237, 28, 36);
+$font-button: dk-agical-brush;

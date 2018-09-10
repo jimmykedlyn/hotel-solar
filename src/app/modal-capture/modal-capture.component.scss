@@ -1,0 +1,173 @@
+@import "../../assets/scss/variables";
+
+.nsm-dialog {
+  @include media-breakpoint-only(sm) {
+    max-width: 888px;
+  }
+
+  @include media-breakpoint-only(sm) {
+    max-width: 888px;
+  }
+
+  @include media-breakpoint-only(md) {
+    max-width: 888px;
+  }
+
+  @include media-breakpoint-only(lg) {
+    max-width: 888px;
+  }
+
+  @include media-breakpoint-only(xl) {
+    max-width: 888px;
+  }
+}
+
+.nsm-content {
+  background: url(../../assets/img/hs-island.png);
+  background-position: top center;
+  background-size: cover;
+  @include media-breakpoint-only(xs) {
+    padding: 15vw 0 15vw 0;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding: 18vw 0 15vw 0;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding: 14vw 0 15vw 0;
+  }
+
+  @include media-breakpoint-only(lg) {
+    padding: 18vw 0 18vw 0;
+  }
+
+  @include media-breakpoint-only(xl) {
+    padding: 178px 0 178px 0;
+  }
+  box-shadow: none;
+}
+
+.nsm-dialog-btn-close {
+  @include media-breakpoint-only(xs) {
+    top: 7vw;
+    right: 11vw;
+  }
+
+  @include media-breakpoint-only(sm) {
+    top: 8vw;
+    right: 13vw;
+  }
+
+  @include media-breakpoint-only(md) {
+    top: 9vw;
+    right: 14vw;
+  }
+
+  @include media-breakpoint-only(lg) {
+    top: 77px;
+    right: 123px;
+  }
+
+  @include media-breakpoint-only(xl) {
+    top: 77px;
+    right: 123px;
+  }
+  filter: invert(1);
+}
+
+.nsm-body {
+  @include media-breakpoint-only(xs) {
+    width: 56vw;
+  }
+
+  @include media-breakpoint-only(sm) {
+    width: 60%;
+  }
+
+  @include media-breakpoint-only(md) {
+    width: 60%;
+  }
+
+  @include media-breakpoint-only(lg) {
+    width: 60%;
+  }
+
+  @include media-breakpoint-only(xl) {
+    width: 60%;
+  }
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.modal__capture--text-title {
+  color: $light-text;
+  text-transform: uppercase;
+  font-family: dk-agical-brush, serif;
+  @include media-breakpoint-only(xs) {
+    font-size: 1em;
+  }
+
+  @include media-breakpoint-only(sm) {
+    font-size: 1.2em;
+  }
+
+  @include media-breakpoint-only(md) {
+    font-size: 2.8em;
+  }
+
+  @include media-breakpoint-only(lg) {
+    font-size: 2.8em;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: 2.8em;
+  }
+  text-align: center;
+}
+
+.modal__capture--text {
+  color: $light-text;
+  font-size: 14px;
+  @include media-breakpoint-only(xs) {
+    font-size: 9px;
+    display: none;
+  }
+
+  @include media-breakpoint-only(sm) {
+    font-size: 12px;
+  }
+  text-align: center
+}
+
+.modal__capture--btn {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 37px;
+  text-transform: uppercase;
+  font-size: 18px;
+  @include media-breakpoint-only(xs) {
+    margin-top: 0;
+    font-size: 3vw;
+  }
+
+  @include media-breakpoint-only(sm) {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+.form-control-lg {
+  @include media-breakpoint-only(xs) {
+    height: calc(2.875rem + -10px);
+  }
+
+  @include media-breakpoint-only(sm) {
+    height: calc(2.875rem + -10px);
+  }
+}

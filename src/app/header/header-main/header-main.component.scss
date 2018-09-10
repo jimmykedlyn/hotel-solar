@@ -1,0 +1,131 @@
+@import "../../../assets/scss/variables";
+
+header {
+  height: 240px;
+}
+
+.header__main {
+  display: flex;
+  background-size: contain;
+  flex-direction: row;
+  flex: 1;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  padding-top: 52px;
+  margin-top: 3%;
+  @include media-breakpoint-only(xs) {
+    padding-top: 9px;
+    margin-top: -8%;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  hs-mini-player {
+    position: absolute;
+  }
+}
+
+.header__main--mobile {
+  @include media-breakpoint-only(sm) {
+    display: none;
+  }
+
+  @include media-breakpoint-only(md) {
+    display: none;
+  }
+  @include media-breakpoint-only(lg) {
+    display: none;
+  }
+  @include media-breakpoint-only(xl) {
+    display: none;
+  }
+}
+
+.header__main--tablet {
+  @include media-breakpoint-only(xs) {
+    display: none;
+  }
+
+  @include media-breakpoint-only(xl) {
+    display: none;
+  }
+}
+
+.header__main--large {
+  @include media-breakpoint-only(xs) {
+    display: none;
+  }
+  @include media-breakpoint-only(sm) {
+    display: none;
+  }
+  @include media-breakpoint-only(md) {
+    display: none;
+  }
+  @include media-breakpoint-only(lg) {
+    display: none;
+  }
+}
+
+.header__main-title {
+  position: absolute;
+  display: flex;
+  color: $light-text;
+  justify-content: center;
+  font-size: 2em;
+  margin-top: 9px;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.5em;
+    left: -20px;
+    margin-top: 9px;
+
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: .7em !important;
+    left: -20px;
+    margin-top: 9px;
+
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.5em;
+  }
+  font-weight: 700;
+  align-content: center;
+  order: 1;
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    margin-top: 11px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: 0.8%;
+  }
+}
+
+
+@supports (-moz-appearance:none) {
+  .header__main-title {
+    @include media-breakpoint-only(xs) {
+      margin-top: 18px;
+    }
+
+    @include media-breakpoint-only(sm) {
+      margin-top: 1.9%;
+    }
+
+    @include media-breakpoint-only(md) {
+      margin-top: 2.5%;
+    }
+
+    @include media-breakpoint-only(lg) {
+      margin-top: 2.9%;
+    }
+
+    @include media-breakpoint-only(xl) {
+      margin-top: 1.9%;
+    }
+  }
+}

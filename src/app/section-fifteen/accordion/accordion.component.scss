@@ -1,0 +1,28 @@
+@import "../../../assets/scss/variables";
+
+.accordion__main {
+  padding-bottom: 100px;
+}
+
+
+.accordion__main--title {
+  font-size: 1.5em;
+  @include media-breakpoint-only(xs) {
+    font-size: 1em;
+    line-height: 18px;
+  }
+  font-weight: 700;
+  color: $dark-text;
+  line-height: 35px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  display: block;
+  white-space: normal!important;
+
+}
+.accordion__main--description {
+  font-size: 1.2em;
+  color: $dark-text;
+  margin-left: 13px;
+}

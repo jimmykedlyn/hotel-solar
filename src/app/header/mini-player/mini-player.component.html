@@ -1,0 +1,8 @@
+<div class="header__main-player">
+  <fa-icon [hidden]="!isPlaying" [icon]="['fas', 'play']" (click)="startStopPlaying('play')"></fa-icon>
+  <fa-icon [hidden]="isPlaying" [icon]="['fas', 'pause']" (click)="startStopPlaying('pause')"></fa-icon>
+  <audio #musicas src="assets/music/lulu-santos-tempos-modernos.mp3"></audio>
+  <b [hidden]="!isPlaying">Ouvir Trilha Sonora</b>
+  <b [hidden]="isPlaying">Tocando Trilha Sonora</b>
+</div>
+

@@ -1,0 +1,34 @@
+<section class="section__fifteen">
+  <div class="container section__fifteen-accordion">
+    <h2>PERGUNTAS FREQUENTES</h2>
+  <hs-accordion></hs-accordion>
+  </div>
+  <div class="section__fifteen-after">
+  <img src="assets/img/hs-island-two.png">
+ <hs-carousel-player-two  (click)="ctrl.next()"></hs-carousel-player-two>
+  <div class="section__fifteen--carousel">
+    <div class="section__fifteen--carousel-main">
+      <h3 class="section__fifteen--carousel-title">Prêmios</h3>
+    </div>
+    <div class="section__fifteen--carousel-elements">
+      <div [@bannerAnimation]="selectedIndex"
+           class="section__fifteen--carousel-elements-container"
+           hsCarouselTwo
+           #ctrl="hsCarouselTwo"
+           [itemsLength]="backingItems.length"
+           (selectedIndex)="selectedIndex = $event"
+           (actualIndex)="actualIndex = $event"
+      >
+        <div *ngFor="let banner of items">
+          <img draggable="false" src="{{ banner.imagem }}">
+          <h4 class="section__fifteen--carousel-elements-title">{{ banner.title }}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+

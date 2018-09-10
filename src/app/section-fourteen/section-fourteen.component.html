@@ -1,0 +1,26 @@
+<section class="section__fourteen">
+  <img src="assets/img/hs-island.png">
+  <hs-carousel-player  (click)="ctrl.next()"></hs-carousel-player>
+    <div class="section__fourteen--carousel">
+      <div class="section__fourteen--carousel-main">
+      <h3 class="section__fourteen--carousel-title">Mais atividades</h3>
+      </div>
+      <div class="section__fourteen--carousel-elements">
+        <div [@bannerAnimation]="selectedIndex"
+             class="section__fourteen--carousel-elements-container"
+             hsCarouselOne
+             #ctrl="hsCarouselOne"
+             [itemsLength]="backingItems.length"
+             (selectedIndex)="selectedIndex = $event"
+             (actualIndex)="actualIndex = $event"
+        >
+          <div *ngFor="let banner of items">
+          <img draggable="false" src="{{ banner.imagem }}">
+        <h4 class="section__fourteen--carousel-elements-title">{{ banner.title }}</h4>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+

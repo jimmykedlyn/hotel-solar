@@ -1,0 +1,15 @@
+<ngx-smart-modal #popupOne [identifier]="'popupOne'">
+  <h3 class="modal__capture--text-title">Pacote Amor de Verão</h3>
+  <h5 class="modal__capture--text">Insira os dados abaixo para entrar na lista</h5>
+  <form action="https://www.rdstation.com.br/api/1.2/conversions" method="POST">
+    <input class="form-control form-control-lg" type="text" name="name" placeholder="Seu nome" required>
+    <input class="form-control form-control-lg" type="email" name="email" placeholder="Seu email" required>
+    <input type="hidden" name="token_rdstation" value="4e70e9bcd60930ef7cde2241a25cf1a4" />
+    <input type="hidden" name="identificador" value="cadastro-amor-de-verao-4" />
+    <input type="hidden" name="redirect_to" value="https://conteudo.hotelsolar.tur.br/agradecimento-amor-de-verao-volume-4" />
+    <h5 class="modal__capture--text">Após o cadastro você receberá um email, verifique também a caixa de spam</h5>
+  <button class="modal__capture--btn btn btn-dark btn-lg" type="submit">Concluir Cadastro</button>
+  </form>
+  <div role="main" id="amor-de-verao-v4-1d20e82cb27a4c574377"></div>
+</ngx-smart-modal>
+

@@ -1,0 +1,68 @@
+@import "../../assets/scss/variables";
+
+.section__footer {
+  background-color: #DE1A22;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section__footer--logo {
+  height: auto;
+  max-height: 100%;
+  filter: hue-rotate(189deg);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 30px;
+  @include media-breakpoint-only(xs) {
+    width: 80%;
+  }
+}
+
+.section__footer--copyright {
+  text-align: center;
+  color: $light-text;
+  font-size: 1.4em;
+  @include media-breakpoint-only(xs) {
+    font-size: 1em;
+  }
+  @include media-breakpoint-only(sm) {
+    font-size: 1em;
+  }
+}
+.section__footer--development {
+  text-align: center;
+  color: $light-text;
+  font-size: 1em;
+}
+.section__footer--socials {
+  text-align: center;
+  a {
+    @include media-breakpoint-only(xs) {
+      font-size: 1.2em;
+    }
+
+    @include media-breakpoint-only(sm) {
+      font-size: 1.4em;
+    }
+
+    @include media-breakpoint-only(md) {
+      font-size: 1.6em;
+    }
+
+    @include media-breakpoint-only(lg) {
+      font-size: 1.8em;
+    }
+
+    @include media-breakpoint-only(xl) {
+      font-size: 2em;
+    }
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 1s;
+
+    &:hover {
+      zoom: 0.9;
+    }
+  }
+}

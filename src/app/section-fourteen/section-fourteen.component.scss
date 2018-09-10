@@ -1,0 +1,219 @@
+@import "../../assets/scss/variables";
+
+.section__fourteen {
+  display: flex;
+  background-size: contain;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  padding-top: 52px;
+  margin-top: 3%;
+
+  img {
+    height: auto;
+    max-width: 100%;
+    clear: both;
+  }
+}
+
+.section__fourteen--carousel {
+  position: absolute;
+}
+
+.section__fourteen--carousel-main {
+  position: relative;
+
+}
+
+.section__fourteen--carousel-title {
+  font-family: dk-agical-brush, serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+
+  @include media-breakpoint-only(xs) {
+    font-size: 1.1em;
+    padding-top: 10vw;
+    padding-bottom: 20px;
+
+  }
+  @include media-breakpoint-only(sm) {
+    font-size: 1.1em;
+    padding-top: 45px;
+    padding-bottom: 20px;
+
+  }
+  @include media-breakpoint-only(md) {
+    font-size: 2.5em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: 2.5em;
+    padding-top: 50px;
+    padding-bottom: 0;
+
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: 2.5em;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  color: $light-text;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__fourteen--carousel-elements {
+  display: block;
+  position: relative;
+  clear: both;
+  @include media-breakpoint-only(xs) {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 0;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 0;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 0;
+  }
+
+  @include media-breakpoint-only(lg) {
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 6%;
+  }
+
+  @include media-breakpoint-only(xl) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 8%;
+    box-sizing: border-box;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+  }
+
+}
+
+.section__fourteen--carousel-elements-container {
+  position:relative;
+  height: auto;
+  overflow:hidden;
+  transition: 1s;
+}
+
+.section__fourteen--carousel-elements-title {
+
+  font-family: dk-agical-brush, serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+   user-select: none;
+  @include media-breakpoint-only(xs) {
+    font-size: 1.1em;
+    padding-top: 35px;
+    padding-bottom: 20px;
+
+  }
+  @include media-breakpoint-only(sm) {
+    font-size: 1.5em;
+    padding-top: 45px;
+    padding-bottom: 20px;
+
+  }
+  @include media-breakpoint-only(md) {
+    font-size: 2.5em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: 2.5em;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: 2.5em;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  color: $light-text;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__fourteen--carousel-player {
+  float: right;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+  @include media-breakpoint-only(xs) {
+    margin-right: -31vw;
+    margin-top: -71vw;
+  }
+
+  @include media-breakpoint-only(sm) {
+    margin-right: -30vw;
+    margin-top: -71vw;
+  }
+
+  @include media-breakpoint-only(md) {
+    margin-right: -30vw;
+    margin-top: -71.1vw;
+  }
+
+
+  @include media-breakpoint-only(lg) {
+    margin-right: -31.5vw;
+    margin-top: -70.5vw;
+  }
+  @include media-breakpoint-only(xl) {
+    margin-right: -341px;
+    margin-top: -863px;
+  }
+
+  img {
+    vertical-align: inherit;
+
+  }
+
+
+  fa-icon {
+    z-index: 999;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 3em;
+    line-height: 0;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 1.2em;
+    }
+  }
+}
+
+

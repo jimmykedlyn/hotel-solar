@@ -1,0 +1,63 @@
+@import "../../assets/scss/variables";
+
+.section__two {
+  display: flex;
+  @include media-breakpoint-only(xs) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include media-breakpoint-only(lg) {
+    padding-top: 50px;
+  }
+
+  @include media-breakpoint-only(xl) {
+    padding-top: 50px;
+  }
+}
+
+.section__two--title {
+  display: flex;
+  @include media-breakpoint-only(xs) {
+    font-size: 1.5em;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 3em;
+  }
+  font-weight: 700;
+  align-content: center;
+  justify-content: center;
+}
+
+.section__two--paragraph {
+  @include media-breakpoint-up(lg) {
+    font-size: 1.5em;
+    width: 60%;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 90%;
+    font-size: 1.2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  color: $dark-text-100;
+
+  b {
+    color: $accent-color;
+  }
+  margin: 0 auto;
+}
+

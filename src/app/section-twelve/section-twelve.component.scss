@@ -1,0 +1,133 @@
+@import "../../assets/scss/variables";
+
+section {
+  height: 170px;
+}
+
+.section__slave {
+  display: flex;
+  background-size: contain;
+  flex-direction: row;
+  flex: 1;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  padding-top: 0;
+  margin-top: 0;
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  hs-mini-player {
+    position: absolute;
+  }
+}
+
+.header__slave--mobile {
+  @include media-breakpoint-only(sm) {
+    display: none;
+  }
+
+  @include media-breakpoint-only(md) {
+    display: none;
+  }
+  @include media-breakpoint-only(lg) {
+    display: none;
+  }
+  @include media-breakpoint-only(xl) {
+    display: none;
+  }
+}
+
+.header__slave--tablet {
+  @include media-breakpoint-only(xs) {
+    display: none;
+  }
+
+  @include media-breakpoint-only(xl) {
+    display: none;
+  }
+}
+
+.header__slave--large {
+  @include media-breakpoint-only(xs) {
+    display: none;
+  }
+  @include media-breakpoint-only(sm) {
+    display: none;
+  }
+  @include media-breakpoint-only(md) {
+    display: none;
+  }
+  @include media-breakpoint-only(lg) {
+    display: none;
+  }
+}
+
+.section__slave-title {
+  position: absolute;
+  display: flex;
+  color: $light-text;
+  justify-content: center;
+  font-size: 2em;
+  margin-top: 9px;
+
+  @include media-breakpoint-only(xs) {
+    font-size: .7em;
+    left: 0;
+    margin-top: 9px;
+
+  }
+
+  @include media-breakpoint-only(sm) {
+    font-size: 1.5em;
+    left: 0;
+    margin-top: 9px;
+
+  }
+
+  @include media-breakpoint-only(md) {
+    font-size: 1.5em;
+  }
+  font-weight: 700;
+  align-content: center;
+  order: 1;
+  width: 100%;
+  @include media-breakpoint-only(lg) {
+    margin-top: 11px;
+  }
+  @include media-breakpoint-only(xl) {
+    margin-top: 0.8%;
+  }
+}
+
+@supports (-moz-appearance:none) {
+  .section__slave-title {
+    @include media-breakpoint-only(xs) {
+      margin-top: 22px;
+    }
+
+    @include media-breakpoint-only(sm) {
+      margin-top: 1.9%;
+    }
+
+    @include media-breakpoint-only(md) {
+      margin-top: 2.5%;
+    }
+
+    @include media-breakpoint-only(lg) {
+      margin-top: 2.9%;
+    }
+
+    @include media-breakpoint-only(xl) {
+      margin-top: 1.9%;
+    }
+  }
+}
+
+
+
+
+
